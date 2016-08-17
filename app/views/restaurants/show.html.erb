@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @restaurant.name %></h1>
+  <p><%= @restaurant.category.capitalize %></p>
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+
+  <%= link_to "Back to all restaurants", restaurants_path %>
+</div>
