@@ -8,13 +8,13 @@
 
 require 'faker'
 
-categories = ["chinese", "italian", "japanese", "french", "belgian"]
+categories = ["Chinese", "Italian", "Japanese", "French", "Belgian"]
 
-5.times do |i|
+6.times do |i|
   i = rand(0..4)
   Restaurant.create(
     name: Faker::Company.name,
-    address: Faker::Address.city,
+    address: Faker::Address.street_address,
     category: categories[i],
     phone_number: Faker::PhoneNumber.phone_number
   )
